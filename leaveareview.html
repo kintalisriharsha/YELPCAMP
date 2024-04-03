@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,intital-scale=1.0">
+        <link rel="stylesheet" href="leaveareview.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="contanier">
+            <nav>
+                <a href="index.html"><img src="Logo.svg" alt="logo"></a>
+                <div class="div1">
+                    <a href="landingpage.html">Home</a>
+                    <a href="login.html">logout</a>
+                </div>
+            </nav>
+            <span onclick="openNav()"><img src="Hamburger Menu.svg" alt="menu"></span>
+            <section id="sidenav" class="div2">
+                <ul>
+                    <li><a href="javascript:void(0)" onclick="closeNav()"><img src="Close.svg" alt="Close"></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <hr>
+                    <li><a href="login.html">logout</a></li>
+                    <hr>
+                </ul>
+            </section>
+            <h1>Add New Comment</h1>
+            <form>
+                <label for="description">Description</label>
+                <br>
+                <textarea name="comment" id="comment" cols="45" rows="8" placeholder="This was probably the best camp i've visited this past year, definitely recommen visiting any time soon...."></textarea>
+                <br><br>
+                <button type="submit" class="but">Post Comment</button>
+            </form>
+            <script>
+                function openNav()
+                {
+                    document.getElementById('sidenav').style.width='200px';
+                }
+                function closeNav()
+                {
+                    document.getElementById('sidenav').style.width='0px';
+                }
+            </script>
+            <footer><img src="Logo.svg" alt="logo"></footer>
+        </div>
+    </body>
+</html>

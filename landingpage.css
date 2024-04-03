@@ -1,0 +1,148 @@
+*
+{
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+::selection
+{
+    background-color: darkgreen;
+}
+body
+{
+    background-color: rgba(218, 199, 174, 0.272);
+}
+.container>nav{
+    padding: 20px;
+}
+.container1>.he
+{
+    visibility: hidden;
+    width: 0;
+}
+.container1>.ro
+{
+    position: fixed;
+    top:0;
+    right: 0;
+}
+.container2>h1
+{
+    font-size: 50px;
+    padding-left: 80px;
+}
+.container2>p
+{
+    padding-left: 80px;
+    font-size: 20px;
+    margin-top: -20px;
+    color: grey;
+}
+.container2 li
+{
+    line-height: 45px;
+    list-style-type: none;
+    font-size: 18px;
+    padding-left: 40px;
+}
+li img{
+    margin-bottom: -5px;
+    padding-right: 10px;
+}
+button
+{
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    background-color: black;
+    box-shadow: 2px 3px 5px black , 3px 4px 5px grey;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+button a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+#Partnered
+{
+    margin-top: 50px;
+}
+.container2>p>img
+{
+    margin-top: 20px;
+    padding-right: 30px;
+}
+@media all and (min-width:300px) and (max-width:700px) {
+    .container1
+    {
+        position: relative;
+    }
+    .container1>.he{
+        visibility: visible;
+        width: 105%;
+        margin-left: -8px;
+        height: 200px;
+    }
+    .container1>.ro
+    {
+        visibility: hidden;
+        width: 0px;
+    }
+    .container2>h1
+    {
+        font-size: 30px;
+        margin-left: -50px;
+    }
+    .container2>p{
+     font-size: 15px;
+     margin-top: -10px;
+     margin-left: -50px;
+     font-weight: 500;
+     color: rgba(128, 128, 128, 0.685); 
+    }
+    .container2 li{
+        margin-left:-50px;
+    }
+    button{
+       margin-left: 20px;
+    }
+}
+@media all and (min-width:701px) and (max-width:1023px) {
+    .container1
+    {
+        position: relative;
+    }
+    .container1>.he{
+        visibility: visible;
+        width: 105%;
+        margin-left: -8px;
+        height: 200px;
+    }
+    .container1>.ro
+    {
+        visibility: hidden;
+        width: 0px;
+    }
+    .container2
+    {
+        padding: 20px;
+    }
+    .container2>p{
+     font-size: 18px;
+     margin-top: -30px;
+     font-weight: 500;
+     color: rgba(128, 128, 128, 0.685); 
+    }
+    .container2 li{
+        margin-left: 0px;
+    }
+    #Partnered
+    {
+        padding-top: 50px;
+    }
+    .container2>p>img{
+        margin-top: 20px;
+    }
+}

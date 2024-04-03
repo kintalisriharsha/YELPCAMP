@@ -1,0 +1,252 @@
+::selection
+{
+    background-color: darkgreen;
+}
+*
+{
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+body
+{
+    background-color: rgba(250, 235, 215, 0.272);
+}
+.div1
+{
+    float: right;
+    padding: 20px;
+} 
+.div1 a 
+{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.div1 a:hover
+{
+    background-image: linear-gradient(white,black);
+    padding: 15px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: white;
+    transition: 0.8s;
+}
+nav a img
+{
+    padding: 20px;
+}
+section
+{
+    visibility: hidden;
+}
+.div2
+{
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: greenyellow;
+    transition: 1.5s;
+}
+ul
+{
+    list-style-type: none;
+}
+ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+li
+{
+    padding: 10px;
+}
+ul li a img
+{
+    transition-delay: 5s;
+    width: 15px;
+    float: right;
+    margin-top: 12px;
+}
+h1
+{
+    padding-left: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+span
+{
+    visibility: hidden;
+}
+h1
+{
+    text-align: center;
+    font-size: 50px;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+label
+{
+    font-size: 20px;
+}
+textarea
+{
+    margin-top: 50px;
+    width: 40%;
+    border: none;
+    outline: none; 
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 2px 3px 5px grey,3px 4px 2px grey;
+}
+textarea:hover
+{
+    background-color: greenyellow;
+}
+.but
+{
+    width: 40%;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 8px grey;
+}
+.but:active
+{
+    box-shadow: 0 5px grey;
+    transform: translateY(5px);
+}
+footer
+{
+    margin-top: 10rem;
+}
+@media all and (min-width:300px) and (max-width:360px) {
+    .div1>a
+    {
+        visibility: hidden;
+    }
+    span{
+        visibility: visible;
+        float: right;
+        clear: right;
+        margin-top: -110px;
+        margin-right: 20px;
+    }
+    h1
+    {
+        font-size: 40px;
+        padding-left: 30px;
+    }
+    label{
+        margin: -25px;
+    }
+    section{
+        visibility: visible;
+    }
+    form{
+        padding: 20px;
+    }
+    textarea{
+        width: 100%;
+    }
+    .but
+    {
+        width: 100%;
+    }
+    footer{
+        margin-top: 8rem;
+    }
+}
+@media all and (min-width:361px) and (max-width:700px) {
+    .div1>a
+    {
+        visibility: hidden;
+    }
+    span{
+        visibility: visible;
+        float: right;
+        clear: right;
+        margin-top: -48px;
+        margin-right: 20px;
+    }
+    h1
+    {
+        font-size: 40px;
+        padding-left: 30px;
+    }
+    label{
+        margin: -25px;
+    }
+    section{
+        visibility: visible;
+    }
+    form{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    textarea{
+        width: 100%;
+    }
+    .but
+    {
+        width: 100%;
+    }
+    footer{
+        margin-top: 9rem;
+    }
+}
+@media all and (min-width:701px) and (max-width:1023px)
+{
+    .div1>a
+    {
+        visibility: hidden;
+    }
+    span{
+        visibility: visible;
+        float: right;
+        clear: right;
+        margin-top: -48px;
+        margin-right: 20px;
+    }
+    h1
+    {
+        font-size: 40px;
+        padding-left: 30px;
+    }
+    label{
+        margin: -25px;
+    }
+    section{
+        visibility: visible;
+    }
+    form{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    textarea{
+        width: 80%;
+    }
+    .but
+    {
+        width: 80%;
+    }
+    footer{
+        margin-top: 9rem;
+    }
+}
