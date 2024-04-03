@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="view.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="Logo.svg" alt="Logo"></a>
+                <a href="index.html" class="home">home</a>
+                <div class="container1">
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">Create a Account</a>
+                </div>
+            </nav>
+            <span onclick="openNav()" class="menu"><img src="Hamburger Menu.svg" alt="Menu"></span>
+            <section id="sidenav" class="mysidenav">
+                <ul>
+                    <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="Close copy.svg" alt="close"></a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <hr>
+                    <li><a href="signup.html">Create a account</a></li>
+                    <hr>
+                </ul>
+            </section>
+            <div class="container2">
+                <div class="container21" id="cols">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15318.572961002297!2d120.63096639999999!3d16.2900452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339109782260604b%3A0x77b32d74b730ec29!2sMt.%20Ulap!5e0!3m2!1sen!2sin!4v1708001801041!5m2!1sen!2sin" width="600" height="450" style="border: none;" allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="container3">
+                    <div class="container22" id="cols">
+                        <img src="Mount Ulap.jpg" alt="mount">
+                        <h2>Mount Ulap <span>$104.99/night</span></h2>
+                        <p>Mount Ulap is a 7.7 kilometer moderately trafficked point-to-point trail located near Tuba,Benguet, Philippines that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking</p>
+                        <i>Submitted by Andrew Mike</i>
+                    </div>
+                    <div class="container23" id="cols">
+                        <h2 >Adam Jones <span>13h ago</span></h3>
+                        <p>Honestly one of the best experiences ever , took us a while to figure out how to get there but it was amazing!</p>
+                        <hr>
+                        <h2>Issac Dylan <span>1d ago</span></h3>
+                        <p>Travelling changes you as a person , you gain more prespective, this is the perfect spot to do that .</p>
+                        <hr>
+                        <h2>Hudson Luca <span>3d ago</span></h3>
+                        <p>Definitely recommend going there. not too far and not a lot of people to ruin the experience.</p>
+                        <hr>
+                        <button><a href="leaveareview.html" target="_blank">Leave a Review</a></button>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <img src="Logo.svg" alt="logo">
+            </footer>
+        </div>
+        <script>
+            function openNav()
+            {
+                document.getElementById('sidenav').style.width='200px';
+            }
+            function closeNav()
+            {
+                document.getElementById('sidenav').style.width='0px';
+            }
+        </script>
+    </body>
+</html>

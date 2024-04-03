@@ -1,0 +1,207 @@
+::selection
+{
+    background-color: darkgreen;
+}
+*
+{
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+body
+{
+    background-color: rgba(250, 235, 215, 0.272);
+}
+.container>span>img
+{
+    float: right;
+    visibility: hidden;
+}
+.container section ul
+{
+    list-style-type: none;
+}
+.container .mysidenav
+{
+    position: fixed;
+    height: 100%;
+    background-color: black;
+    width: 0;
+    top:0;
+    right: 0;
+    /* z-index: 1; */
+    transition: 1.0s;
+}
+.container section ul
+{
+    margin-top: 50px;
+}
+.container section ul li a
+{
+    font-size: 22px;
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+    transition: 1.0s;
+}
+.container section ul li a:hover{
+    color: greenyellow;
+}
+.container .closebtn
+{
+    width: 20px;
+    color: white;
+    margin-left: 120px;
+}
+.container .closebtn:hover
+{
+    color: greenyellow;
+}
+.container img {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.container nav{
+    float: right;
+    display: flex;
+    gap:30px;
+    margin: 30px 30px 0px 0px;
+}
+.container nav a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.container nav a:hover{
+    color: greenyellow;
+    border-bottom: 2px solid greenyellow;
+}
+.container1>h3
+{
+    text-align: center;
+    margin-top:30px;
+    font-size: 50px;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label
+{
+    font-size: 20px;
+    line-height: 40px;
+}
+input[type]{
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 4px 3px grey
+    ,5px 2px 3px rgba(80, 120, 140, 0.8);
+    outline: none;
+    font-size: 16px;
+    border: none;
+}
+input[type]:hover{
+    box-shadow: 3px 5px 6px rgba(35, 234, 135, .3),2px 7px 3px hsl(92, 20%, 50%);
+    outline: none;
+    border: 1px solid inherit;
+    background-color: greenyellow;
+    color: black;
+}
+textarea{
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 4px 3px grey
+    ,5px 2px 3px rgba(80, 120, 140, 0.8);
+    outline: none;
+    font-size: 16px;
+    border: none;
+    text-align: justify;
+}
+textarea:hover
+{
+    box-shadow: 3px 5px 6px rgba(35, 234, 135, .3),2px 7px 3px hsl(92, 20%, 50%);
+    outline: none;
+    border: 1px solid inherit;
+    background-color: greenyellow;
+    color: black;
+}
+button{
+    padding: 15px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    box-shadow: 5px 4px 3px grey
+    ,5px 2px 3px rgba(80, 120, 140, 0.8);
+    background-color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: greenyellow;
+    color: black;
+    box-shadow: 3px 5px 6px rgba(35, 234, 135, .3),2px 7px 3px hsl(92, 20%, 50%);
+    outline: none;
+    border: 1px solid inherit; 
+}
+/* button:active
+{
+    transform: trasulateY(4px);
+} */
+footer
+{
+    margin-top: 30px;
+}
+@media screen and (min-width:250px) and (max-width:339px) {
+    .container span>img{
+        visibility: visible;
+        float: right;
+        clear: both;
+        margin-top: -80px;
+        margin-right: 20px;
+    }
+    .container nav{
+        visibility: hidden;
+    }
+    .container1{
+        display: block;
+    }
+    .container1>h3{
+        font-size: 40px;
+    }
+    .container1{
+        padding: 20px;
+    }
+}
+@media screen and (min-width:340px) and (max-width:700px) {
+    .container span>img{
+        visibility: visible;
+        float: right;
+        clear: both;
+        margin-top: -30px;
+        margin-right: 20px;
+    }
+    .container nav{
+        visibility: hidden;
+    }
+    .container1{
+        padding: 20px;
+    }
+}
+@media screen and (min-width:701px) and (max-width:1023px) {
+    .container span>img{
+        visibility: visible;
+        float: right;
+        clear: both;
+        margin-top: -30px;
+        margin-right: 20px;
+    }
+    input[text]
+    {
+        width: 100%;
+    }
+    .container nav{
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,394 @@
+*
+{
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+:root
+{
+    --color:lightgreen;
+}
+body
+{
+    background-color: rgba(250, 235, 215, 0.272);
+}
+.container>a>img
+{
+    padding: 30px 0 0 55px;
+}
+nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+} 
+nav>a
+{
+    margin-right: 10px;
+    margin-top: -25px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+.container>span>img
+{
+    float: right;
+    visibility: hidden;
+}
+.container section ul
+{
+    list-style-type: none;
+}
+.container .mysidenav
+{
+    position: fixed;
+    height: 100%;
+    background-color: black;
+    width: 0;
+    top:0;
+    right: 0;
+    /* z-index: 1; */
+    transition: 1.0s;
+}
+.container section ul
+{
+    margin-top: 50px;
+}
+.container section ul li a
+{
+    font-size: 22px;
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+    transition: 1.0s;
+}
+.container section ul li a:hover{
+    color: greenyellow;
+}
+.container .closebtn
+{
+    width: 20px;
+    color: white;
+    margin-left: 120px;
+}
+.container .closebtn:hover
+{
+    color: greenyellow;
+}
+#Create
+{
+    margin-right: 40px;
+    margin-top: -45px;
+    color: white;
+    border-radius: 15px;
+    background-color: black;
+    padding: 20px;
+}
+#Create:hover
+{
+    /* background-image: conic-gradient(#40e940,rgb(213, 65, 196) ,#cd94215e); */
+    background-color: var(--color);
+}
+nav>a:hover
+{
+    color: #3fd51a;
+}
+div.container1
+{
+    border-radius: 15px;
+    background-color:blanchedalmond;
+    padding: 30px;
+    margin:40px;
+}
+.container1>h1
+{
+    margin-top: 10px;
+    font-size: 50px;
+    text-shadow: 2px 2px greenyellow;
+}
+.container1>p
+{
+    margin-top: -20px;
+    font-weight: 200;
+    color: grey;
+    font-size: 18px;
+}
+.sea>img
+{
+    padding-left: 10px;
+    width: 25px;
+}
+.sea
+{
+    width: 270px;   
+    background-color: white;
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid palevioletred;
+    margin-bottom: 10px;
+}
+.input
+{
+    background-color: white;
+    border: none;
+    outline: none;
+    width: 300px;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+}
+.sea>a
+{
+    position: absolute;
+    margin-top: 55px;
+    text-decoration: none;
+    color: black;
+}
+.sea>a:hover
+{
+    border-bottom: 2px solid green;
+    color: green;
+}
+#submit
+{
+    width: 8rem;
+    padding: 18px;
+    margin-left: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+#submit:hover
+{
+    background-image: conic-gradient(#E94080,rgb(162, 63, 13) ,#ffbc375e); 
+    background-color: var(--color);
+}
+.container1>a
+{
+    padding-top: 30px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    color: grey;
+}
+.container1>a:hover
+{
+    color: #E94057;
+    text-decoration: underline dotted;
+}
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    animation: slides 1s ease-in-out 1 backwards;
+}
+@keyframes slides {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.container2>.card
+{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 15px;
+    width: 30%;
+    margin-top: -10px;
+}
+.container2>.card>h4
+{
+    font-size: 23px;
+    margin-bottom: -5px;
+}
+.container2>.card>img
+{
+    width: 100%;
+    border-radius: 15px;
+}
+#Seven
+{
+    margin-bottom: 34px;
+}
+.card>button
+{
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+    box-shadow: 3px 3px 4px grey;
+}
+.card>button>a
+{
+    text-decoration: none;
+    color: white;
+}
+.card>button:hover{
+    box-shadow: 0px 8px grey,0px 8px grey;
+}
+.card>button:active
+{
+  box-shadow: 0 5px grey;
+  transform: translateY(5px);
+}
+::selection
+{
+    background-color: darkgreen;
+}
+footer
+{
+    margin-top: 20px;
+}
+@media screen and (min-width:300px) and (max-width:380px) 
+{
+    .container a img{
+        margin-left: -30px;
+        margin-top: -20px;
+    }
+    .container span img{
+        visibility: visible;
+        margin-top: -55px;
+        margin-right: 20px;
+    }
+    nav{
+        visibility: hidden;
+    }
+    div.container1{
+        margin: 10px;
+    }
+    .sea>img{
+        width: 20px;
+        padding-left:5px ;
+    }
+    .sea
+    {
+        width: 100%;
+        padding: 10px;
+    }
+    .input{
+        width: 100%;
+        text-align: center;
+    }
+    #submit{
+        padding:7px;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .container2
+    {
+        padding-top: 20px;
+        margin: 15px;
+    }
+    .container2>.card
+    {
+        width: 100%;
+    }
+    #Seven
+{
+    margin-bottom: 34px;
+}
+}
+@media screen and (min-width:381px) and (max-width:600px) {
+    
+    .container a img{
+        margin-left: -30px;
+        margin-top: -20px;
+    }
+    .container span img{
+        visibility: visible;
+        margin-top: -40px;
+        margin-right: 30px;
+    }
+    nav{
+        visibility: hidden;
+    }
+    div.container1{
+        margin: 15px;
+    }
+    .sea>img{
+        width: 20px;
+        padding-left:5px ;
+    }
+    .sea
+    {
+        width: 100%;
+        padding: 10px;
+    }
+    .input{
+        width: 100%;
+        /* padding: 10px; */
+        text-align: center;
+    }
+    #submit{
+        padding:7px;
+    }
+    .container2
+    {
+        padding-top: 20px;
+        margin: 15px;
+    }
+    .container2>.card
+    {
+        width: 100%;
+    }
+}
+@media screen and (min-width:601px) and (max-width:1023px) {
+    .container a img {
+        margin-left: -30px;
+        margin-top: -20px;
+    }
+    .container span img {
+        visibility: visible;
+        margin-top: -40px;
+        margin-right: 30px;
+    }
+    nav {
+        visibility: hidden;
+    }
+    div.container1 {
+        margin: 15px;
+    }
+    .sea > img {
+        width: 20px;
+        padding-left: 5px;
+    }
+    .sea {
+        width: 50%;
+        padding: 10px;
+    }
+    .input {
+        width: 100%;
+        text-align: center;
+    }
+    #submit {
+        padding: 7px;
+    }
+    #Seven
+{
+    margin-bottom: 18px;
+}
+        .container2 {
+            display: grid; /* Change to grid layout */
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            gap: 20px; /* Gap between cards */
+            justify-content: center; /* Center items horizontally */
+            margin: 21px;
+        }
+    
+        .container2 > .card {
+            width: 100%; /* Take full width of the grid cell */
+        }
+}
+    

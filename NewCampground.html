@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devic-width,initial-scale=1.0">
+        <title>Indexx</title>
+        <link rel="stylesheet" href="NewCampground.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="icon" type="svg" href="Logo.svg">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <img src="Logo.svg" alt="Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="login.html">logout</a>
+            </nav>
+            <span onclick="openNav()"><img src="Hamburger Menu.svg" alt="Menu"></span>
+            <section id="sidenav" class="mysidenav">
+                <ul>
+                    <li><a href="javascript:void(0)"class='closebtn' onclick="closeNav()">&times;</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">logout</a></li>
+                </ul>
+            </section>
+            <div class="container1">
+                <h3>Add Campground</h3>
+                <form>
+                    <label>Compground Name</label>
+                    <br>
+                    <input type="text" placeholder="Seven Sisters Waterfall" id="name" required>
+                    <br><br>
+                    <label>Price</label>
+                    <br>
+                    <input type="number" placeholder="$1000" id="Price" required>
+                    <br><br>
+                    <label>Image Url</label>
+                    <br>
+                    <input type="text" placeholder="www.inputimage.com/path" id="image" required>
+                    <br><br>
+                    <label>Description</label>
+                    <br>
+                    <textarea name="message" id="mes" cols="51" rows="6">The Seven Sisters is the 39th tallest waterfall in Norway. The 410-metre tall waterfall consists of seven seperate streams, and the tallest of the seven has a free fall that measures 250 meters. The waterfall is located along the Geriangerfjorden in Stranda Municipality in more og Romsdal country. Norwar.</textarea>
+                    <br><br>
+                    <button role="button">ADD Campground</button>
+                </form>
+            </div>
+            <footer>
+                <img src="Logo.svg" alt="logo">
+            </footer>
+        </div>
+        <script>
+            function openNav()
+            {
+                document.getElementById('sidenav').style.width='200px';
+            }
+            function closeNav()
+            {
+                document.getElementById('sidenav').style.width='0px';
+            }
+        </script>
+    </body>
+</html>

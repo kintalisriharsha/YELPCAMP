@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>campground</title>
+        <link rel="stylesheet" href="campgrounds.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="icon" type="svg" href="Logo.svg">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <a href="index.html"><img src="Logo.svg" alt="Logo"></a>
+            <nav class="h">
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html" id="Create">Create an account</a>
+            </nav>
+            <span onclick="openNav()"><img src="Hamburger Menu.svg" alt="Menu"></span>
+            <section id="sidenav" class="mysidenav">
+                <ul>
+                    <li><a href="javascript:void(0)"class='closebtn' onclick="closeNav()">&times;</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">logout</a></li>
+                </ul>
+            </section>
+            <div class="container1">
+                <h1>Welcome to <br> YelpCamp!</h1>
+                <p>View our hand-picked campgrounds from all over the world, or add your own.</p>
+                <div class="sea">
+                    <img src="Search Icon.svg" alt="search">
+                    <input type="search" placeholder="search for camps" class="input">
+                    <a href="NewCampground.html">Add New Campground</a>
+                    <button type="submit" id="submit">Search</button>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="card"><img src="Mount Ulap.jpg" alt="Mount"><h4>Mount Ulap</h4><p>One of the most famous hikes in Benguet is Mt Ulap in ltogon.</p><button type="submit"><a href="view.html">View Campground</a></button></div>
+                <div class="card"><img src="Calaguas Island.jpg" alt="Island"><h4>Calaguas Islands</h4><p>A paradise of islands that can rival the white sand beauty of Boracay.</p><button type="submit"><a href="view.html">View Campground</a></button></div>
+                <div class="card"><img src="Onay Beach.jpg" alt="onay"><h4>Onay Beach</h4><p>This is one of the best beach camping sites, beautiful and pristene</p><button type="submit"><a href="view.html">View Campground</a></button></div>
+                <div class="card"><img src="Seven Sisters Waterfall.jpg" alt="waterfall"><h4>Seven Sisters Waterfall</h4><p id="Seven">The Seven Sisters is the 39th tallest waterfall in Norway.</p><button type="submit"><a href="view.html">View Campground</a></button></div>
+                <div class="card"><img src="Latik Riverside.jpg" alt="Riverside"><h4>Latik Riverside</h4><p>Philippines is one of the most dazzling countries in all of Asia.</p><button type="submit"><a href="view.html">View Campground</a></button></div>
+                <div class="card"><img src="Buloy Springs.jpg" alt="Springs"><h4>Buloy Springs</h4><p>This is one of the best beach camping sites, beautiful and pristine .</p><button type="submit"><a href="view.html">View Campground</a></button></div>
+            </div>
+        </div>
+        <footer>
+            <img src="Logo.svg" alt="Logo">
+        </footer>
+        <script>
+            function openNav()
+            {
+                document.getElementById('sidenav').style.width='200px';
+            }
+            function closeNav()
+            {
+                document.getElementById('sidenav').style.width='0px';
+            }
+        </script>
+    </body>
+</html>
